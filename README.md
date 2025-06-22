@@ -8,3 +8,16 @@ Designed within an agent-based market simulation (Flexemarkets), the bot **engag
 - **Dynamic Portfolio Simulation:** Simulates post-trade portfolio payoffs to assess optimality.
 - **Reactive Market Maker:** Monitors the order book and selectively responds to opportunities.
 - **Risk-Aware Logic:** Penalises volatility to prevent overly aggressive posisitions.
+
+---
+
+## How It Works
+At each step:
+1. The bot receives public market orders.
+2. For each order, it:
+  - Checks whether it has the holdings or cash to respond.
+  - Simulates the impact of accepting the trade on its portfolio.
+  - Calculates a **performance score**:
+    \[
+    \text{Score} = \mathbb{E}[\text{Payoff}] - \lambda \cdot \text{Variance}
+    \]
