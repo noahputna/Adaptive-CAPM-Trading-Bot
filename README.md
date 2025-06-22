@@ -18,5 +18,4 @@ At each step:
   - Checks whether it has the holdings or cash to respond.
   - Simulates the impact of accepting the trade on its portfolio.
   - Calculates a **performance score**:
-    \[
-    \text{Score} = \mathbb{E}[\text{Payoff}] - \lambda \cdot \text{Variance}\]
+    Score = E[Payoff] - λ × Variance
