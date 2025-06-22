@@ -18,4 +18,5 @@ At each step:
   - Checks whether it has the holdings or cash to respond.
   - Simulates the impact of accepting the trade on its portfolio.
   - Calculates a **performance score**:<br>
-    Score = E[Payoff] - λ × Variance
+    Score = E[Payoff] - λ × Variance<br>
+  - If the score is **positive**, it submits a response order to **capture the opportunity**.
