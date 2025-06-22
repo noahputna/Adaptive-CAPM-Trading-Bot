@@ -19,5 +19,4 @@ At each step:
   - Simulates the impact of accepting the trade on its portfolio.
   - Calculates a **performance score**:
     \[
-    \text{Score} = \mathbb{E}[\text{Payoff}] - \lambda \cdot \text{Variance}
-    \]
+    \text{Score} = \mathbb{E}[\text{Payoff}] - \lambda \cdot \text{Variance}\]
