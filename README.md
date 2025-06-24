@@ -1,4 +1,4 @@
-# CAPMBot - Adapative CAPM-Based Trading Agent
+# CAPMBot - Adapative CAPM-Based Trading Bot
 CAPMBot is a fully autonomous trading agent built for Flexemarkets (a simulated marketplace). It uses a Capital Asset Pricing Model (CAPM) inspired utility function to assess risk-adjusted asset returns and execute strategic trades.
 
 Designed within an agent-based market simulation (Flexemarkets), CAPMBot manages portfolio risk, liquidity, and asset selection - making it suitable for research, education, and competitive trading scenarios.
