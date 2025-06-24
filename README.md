@@ -24,3 +24,23 @@ Utility = E[Payoff] - λ × Variance<br>
   - Automatically liquidates notes to prevent being cash-constrained.
 4. **Performance Objective**
   - Maximises risk-adjusted returns using a CAPM utility function.
+
+---
+
+## File Overview
+|File           | Description                                            |
+|---------------|--------------------------------------------------------|
+| `CAPM_Bot.py` | Main Trading bot implementing all logic and utilities. |
+
+
+---
+
+## Getting Started
+### Pre-requisities
+- `fmclient` (Financial Market Simulator SDK)
+- `numpy`
+
+Install dependencies:
+```bash
+pip install numpy
+```
