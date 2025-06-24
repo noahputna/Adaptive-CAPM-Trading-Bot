@@ -8,6 +8,7 @@ Designed within an agent-based market simulation (Flexemarkets), CAPMBot manages
 ## Features
 - **CAPM Utility Strategy**: Calculates expected returns and risk (variance) to select optimal trades using:<br>
 Utility = E[Payoff] - λ × Variance<br>
+
 - **Fully Autonomous**: Handles market orders dynamically based on real-time conditions.
 - **Liquidity Management**: Sells "Note" assets at a discount to raise cash when needed.
 - **Custom Risk Aversion**: Easily tune risk preference using a `risk_aversion` parameter.
@@ -85,7 +86,7 @@ python CAPM_bot.py
 
 ## Example Strategy
 If the expected payoff of **Stock A** is **90** with variance **16**, and the market price is **85**:<br>
-Utility = 90 - 0.5 * 16 = 82
+Utility = 90 - 0.5 * 16 = 82<br>
 
 Since utility < market price, the bot **will not buy**.
 If the price drops below **82**, the bot will place a buy order for 1 unit.
