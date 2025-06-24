@@ -8,7 +8,7 @@ Designed within an agent-based market simulation (Flexemarkets), CAPMBot manages
 ## Features
 - **CAPM Utility Strategy**: Calculates expected returns and risk (variance) to select optimal trades using:<br>
 
-Utility = E[Payoff] - λ × Variance<br>
+  Utility = E[Payoff] - λ × Variance<br>
 
 - **Fully Autonomous**: Handles market orders dynamically based on real-time conditions.
 - **Liquidity Management**: Sells "Note" assets at a discount to raise cash when needed.
