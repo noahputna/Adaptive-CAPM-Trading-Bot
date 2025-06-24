@@ -44,3 +44,33 @@ Install dependencies:
 ```bash
 pip install numpy
 ```
+
+---
+
+## Setup
+
+Update the folliwng fields in `__main__` before running:
+
+```python
+FM_EMAIL = "FM_EMAIL"      
+FM_PASSWORD = "FM_PASSWORD"
+```
+Do **not** hardcode credentials. Use environment variables in production:
+
+```bash
+export FM_EMAIL="your-email"
+export FM_PASSWORD="your-password"
+```
+Use ```os.getenv()``` in your Python code to fetch credentials securely:
+```python
+import os
+
+email = os.getenv("FM_EMAIL")
+password = os.getenv("FM_PASSWORD")
+```
+
+## Run the Bot
+```bash
+python CAPM_bot.py
+```
+
