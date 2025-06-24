@@ -74,3 +74,18 @@ password = os.getenv("FM_PASSWORD")
 python CAPM_bot.py
 ```
 
+---
+
+## Parameters
+| Parameter        | Default    | Description                                   |
+|------------------|------------|-----------------------------------------------|
+| `risk_aversion`  | `0.5` | Higher value = more risk-averse decision making.   |
+| `note_discount`  | `2`   | Discount applied when selling notes to raise cash. |
+| `cash_threshold` | `10`  | Minimum desired cash buffer.                       |
+
+## Example Strategy
+If the expected payoff of **Stock A** is **90** with variance **16**, and the market price is **85**:<br>
+Utility = 90 - 0.5 * 16 = 82
+
+Since utility < market price, the bot **will not buy**.
+If the price drops below **82**, the bot will place a buy order for 1 unit.
